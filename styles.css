@@ -1,14 +1,52 @@
+/*
+ * CSS Resets
+ */
+
+/* reset margin and padding on all elements */
 * { 
 	margin: 0; 
-	padding: 0; 
+	padding: 0;
 }
 
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+
+/* allow us to make sections which are the same size as the browser window */
 body, html {
 	height: 100%;
 }
 
 /*
- * Common Bits
+ * General Text Bits
+ */
+body {
+	font-family: 'Verdana', 'Arial', 'sans-serif';
+	font-size: 16px;
+}
+
+h1, h2 {
+	font-family: 'Freckle Face', 'Helvetica', 'sans-serif';
+}
+
+h1 {
+	font-size: 100px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+p {
+	padding: 10px 0;
+	line-height: 170%;
+}
+
+/*
+ * General Layout Bits
  */
 .centered {
 	width: 950px;
@@ -31,8 +69,6 @@ body, html {
 	right: 10%;
 	top: 10%;
 	color: #FFFFFF;
-	font-family: 'Freckle Face', 'Helvetica', 'sans-serif';
-	font-size: 100px;
 	line-height: 70%;
 }
 
@@ -49,13 +85,19 @@ body, html {
 	color: #D3F5D3;
 	min-height: 100%;
 	width: 100%;
-	padding: 50px 0;
+	padding: 100px 0;
 }
 
 .introduction-section img {
+	float:left;
 	width: 300px;
 	border: 10px solid #D3F5D3;
 	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+	margin-right: 30px;
+}
+
+.introduction-section .text-content {
+	text-align: justify;
 }
 
 /*
