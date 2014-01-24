@@ -8,6 +8,14 @@ body, html {
 }
 
 /*
+ * Common Bits
+ */
+.centered {
+	width: 950px;
+	margin: 0 auto;
+}
+
+/*
  * Title Section
  */
 .title-section {
@@ -39,8 +47,15 @@ body, html {
 .introduction-section {
 	background: #005201;
 	color: #D3F5D3;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
+	padding: 50px 0;
+}
+
+.introduction-section img {
+	width: 300px;
+	border: 10px solid #D3F5D3;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 /*
