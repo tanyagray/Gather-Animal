@@ -2,3 +2,50 @@
 	margin: 0; 
 	padding: 0; 
 }
+
+body, html {
+	height: 100%;
+}
+
+/*
+ * Title Section
+ */
+.title-section {
+	background: #000000 url('images/marcwitzel-zebra.jpg') no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.title-section h1 {
+	color: #FFFFFF;
+}
+
+/*
+ * Introduction Section
+ */
+.introduction-section {
+	background: #005201;
+	color: #D3F5D3;
+	height: 100%;
+	width: 100%;
+}
+
+/*
+ * Photo Section
+ */
+.photo-section {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.photo-section .image-info {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.7);
+	bottom: 0;
+	padding: 20px;
+	width: 100%;
+	color: #FFFFFF;
+}
