@@ -20,6 +20,22 @@ body, html {
 	height: 100%;
 }
 
+/* allows us to force div elements to grow to fit floated elements inside them */
+/* also known as a 'clearfix' to web developers */
+.contain-floats:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .contain-floats             { zoom: 1; } /* IE6 */
+*:first-child+html .contain-floats { zoom: 1; } /* IE7 */
+
+
+
+
 /*
  * General Text Bits
  */
@@ -28,7 +44,7 @@ body {
 	font-size: 16px;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Freckle Face', 'Helvetica', 'sans-serif';
 }
 
@@ -40,10 +56,17 @@ h2 {
 	font-size: 40px;
 }
 
+h3 {
+	font-size: 30px;
+}
+
 p {
 	padding: 10px 0;
 	line-height: 170%;
 }
+
+
+
 
 /*
  * General Layout Bits
@@ -52,6 +75,9 @@ p {
 	width: 950px;
 	margin: 0 auto;
 }
+
+
+
 
 /*
  * Title Section
@@ -77,6 +103,9 @@ p {
 	font-size: 70px;
 }
 
+
+
+
 /*
  * Introduction Section
  */
@@ -100,6 +129,9 @@ p {
 	text-align: justify;
 }
 
+
+
+
 /*
  * Photo Section
  */
@@ -112,9 +144,47 @@ p {
 
 .photo-section .image-info {
 	position: absolute;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.8);
 	bottom: 0;
 	padding: 20px;
 	width: 100%;
 	color: #FFFFFF;
 }
+
+
+
+
+/*
+ * Species Section
+ */
+.species-section {
+	background: #4C046E;
+	color: #F0E1F7;
+	min-height: 100%;
+	width: 100%;
+	padding: 100px 0;
+}
+
+.species-section .species-info {
+	margin-top: 50px;
+}
+
+.species-section .species-info img {
+	width: 150px;
+	float:left;
+	border: 10px solid #F0E1F7;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+	margin-right: 30px;
+}
+
+.species-section .species-info .text-content {
+	display:block;
+	overflow:hidden;
+}
+
+.species-section .species-info .attribution {
+	font-size: 12px;
+	font-style: italic;
+}
+
+
